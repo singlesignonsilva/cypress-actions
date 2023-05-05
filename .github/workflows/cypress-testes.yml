@@ -3,14 +3,14 @@ name: Cypress Tests
 on: [push]
 
 jobs:
- cypress-electron-tests:
-   runs-on: ubuntu-latest
-   steps:
-    - name: Get code
-      uses: actions/checkout@v3.5.2
+  cypress-electron-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3.5.2
       
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: yarn install
       
-    - name: Run E2E tests
-      run: npm cypress run
+      - name: Run E2E tests
+        run: yarn cypress run
