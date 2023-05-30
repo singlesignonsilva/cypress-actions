@@ -19,3 +19,6 @@ jobs:
       
       - name: Run E2E tests
         run: ${{ github.event.inputs.cli }}
+        
+      - name: Cypress report action duynhanf   
+        uses: duynhanf/cypress-report-action@v13
